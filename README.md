@@ -78,16 +78,51 @@ Choosing the right AI model can be confusing with so many options available.
 
 ---
 
-## 🧩 Chrome Extension (Coming Soon)
+## 🧩 Chrome Extension
 
-A Chrome Extension version is planned!  
-- It will offer the same recommendation features directly in your browser.
-- Once available, screenshots and setup instructions will be added here.
-- Screenshots for the extension will appear in the `output-images/` folder.
+A Chrome Extension version is now available!  
+- Get AI model recommendations directly in your browser, on any page.
+- Extension screenshots are in the `output-images/` folder.
 
-**To try the Chrome Extension:**  
-- Switch to the `chrome-extension` branch (coming soon).
-- Follow the instructions in this README for extension-specific setup.
+### How to Load the Extension in Chrome
+
+1. **Switch to the `chrome-extension` branch:**
+   ```sh
+   git checkout chrome-extension
+   ```
+
+2. **Build or prepare the extension files:**
+   - The extension source code is in the `extension/` folder.
+   - Make sure all files are present in `extension/`.
+
+3. **Load the extension in Chrome:**
+   - Open Chrome and go to `chrome://extensions/`.
+   - Enable **Developer mode** (toggle in the top right).
+   - Click **Load unpacked**.
+   - Select the `extension/` folder from this repository.
+
+4. **Configure your Gemini API key:**
+   - Open the extension’s popup (click the extension icon in Chrome).
+   - Enter your Gemini API key in the settings or prompt (see extension UI).
+   - The extension will store your key locally (never sent to anyone except Gemini API).
+
+5. **Using the Extension:**
+   - Highlight or type your AI task on any webpage, or use the extension popup.
+   - Click **"Get Recommendation"** in the extension.
+   - Instantly see recommended AI models and explanations, just like the web app.
+
+### Extension Screenshots
+
+See example screenshots in the [`output-images/`](output-images/) folder:
+- `output-images/extension-*.png` show the extension in action.
+
+
+### Example Screenshots
+
+| Task Input | Model Recommendation |
+|------------|---------------------|
+| ![Chrome Extension Screenshot 1](output-images/extension1.png) | ![Chrome Extension Screenshot 2](output-images/extension2.png) |
+| ![Chrome Extension Screenshot 1](output-images/extension3.png) | ![Chrome Extension Screenshot 2](output-images/extension4.png) ![Chrome Extension Screenshot 2](output-images/extension5.png) |
 
 ---
 

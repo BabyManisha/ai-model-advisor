@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "AI Model Advisor - A React application for AI model selection and evaluation",
+  "author": {
+    "name": "Baby Manisha Sunkara",
+    "email": "babymaneesha@gmail.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

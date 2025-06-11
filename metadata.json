@@ -1,6 +1,6 @@
 {
   "name": "AI Model Advisor",
-  "description": "An application that suggests the most suitable AI model for a given task, with explanations, powered by Google Gemini.",
+  "description": "An application that suggests the most suitable AI model for a given task, with explanation.",
   "requestFramePermissions": [],
   "prompt": ""
 }
