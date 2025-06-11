@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "AI Model Advisor",
+  "version": "1.0",
+  "description": "An application that suggests the most suitable AI model for a given task, with explanations, powered by Google Gemini.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' https://esm.sh; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src https://generativelanguage.googleapis.com; object-src 'self';"
+  }
+}
