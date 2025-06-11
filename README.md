@@ -141,7 +141,7 @@ You can find all screenshots in the [`output-images/`](output-images/) folder.
 
 **
 
-Made with ❤️ by 
+Made with ❤️ by 👩🏻‍💻
 
 [Baby Manisha Sunkara](https://babymanisha.com)
 
