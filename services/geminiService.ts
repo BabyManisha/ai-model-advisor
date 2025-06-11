@@ -1,17 +1,15 @@
-
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
 import type { Recommendation } from '../types';
 import { GEMINI_MODEL_NAME, SYSTEM_INSTRUCTION, USER_PROMPT_TEMPLATE } from '../constants';
 
-// Initialize the GoogleGenAI client directly with process.env.API_KEY as per guidelines.
-// Assumes process.env.API_KEY is pre-configured, valid, and accessible.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Remove: const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
-export async function getAIModelRecommendation(taskDescription: string): Promise<Recommendation> {
-  if (!process.env.API_KEY) {
-    console.error("Gemini API Key is not configured. Please contact support or check your environment setup.");
-    return Promise.reject(new Error("Gemini API Key is not configured. Please contact support or check your environment setup."));
+export async function getAIModelRecommendation(taskDescription: string, apiKey: string): Promise<Recommendation> {
+  if (!apiKey) {
+    return Promise.reject(new Error("Gemini API Key is not set. Please enter your API key."));
   }
+
+  const ai = new GoogleGenAI({ apiKey });
 
   try {
     const fullPrompt = USER_PROMPT_TEMPLATE(taskDescription);
