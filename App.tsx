@@ -85,9 +85,14 @@ const App: React.FC = () => {
               <div className="inline-block bg-slate-700 p-6 rounded-lg shadow-md">
                 {/* Academic Cap Icon for placeholder */}
                 <div className="placeholder-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-16 h-16 mx-auto mb-4 text-sky-500">
+                  {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-16 h-16 mx-auto mb-4 text-sky-500">
                     <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM12 13.47l-7-3.82v3.65l7 3.87 7-3.87V9.65l-7 3.82z"/>
-                  </svg>
+                  </svg> */}
+                  <img
+                    src="./logo.png"
+                    alt="Academic Cap Icon"
+                    className="w-10 h-10 text-sky-400"
+                  />
                 </div>
                 <p className="text-xl">Your AI model recommendation will appear here.</p>
                 <p className="text-sm mt-1">Enter your task above to get started!</p>
